@@ -1,0 +1,12 @@
+[color]
+        ui = auto
+
+[user]
+        email = builder@intel.com
+        name = builder
+
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
